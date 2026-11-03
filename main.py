@@ -1,6 +1,7 @@
-from register_team import register_team
-from list_teams import list_teams
-from assign_matches import generate_tournament_fixture
+from tournament.register_team import register_team
+from tournament.list_teams import list_teams
+from tournament.assign_matches import generate_tournament_fixture
+from tournament.list_fixtures import list_fixtures
 
 
 print("-"*4, "MENU", "-"*4)
@@ -16,3 +17,6 @@ elif user_input == "2":
     
 elif user_input == "3":
     generate_tournament_fixture()
+
+elif user_input  == "4":
+    list_fixtures() 
