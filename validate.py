@@ -5,13 +5,12 @@ def validate_team(name, registered_names):
         return False, "Error: Team name cannot be blank."
     
     if len(cleaned_name) < 2:
-        return False, "Error: Team name must be more than 2 characters."
+        return False, "Error: Team name must be 2 or more characters."
     if len(cleaned_name) > 30:
-        return False, "Error: Team name must cannot exceed 30 characters"
+        return False, "Error: Team name cannot exceed 30 characters."
     
-    for teams in registered_names:
-        if teams['name'].strip().lower() == cleaned_name.lower():
-            return False, f"Error:'{teams['name']}' is rejected as duplicate"
+    for team in registered_names:
+        if team['name'].strip().lower() == cleaned_name.lower():
+            return False, f"Error: '{team['name']}' is rejected as a duplicate."
         
-    return True, cleaned_name    
-        
+    return True, cleaned_name

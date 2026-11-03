@@ -1,5 +1,6 @@
 from register_team import register_team
 from list_teams import list_teams
+from assign_matches import generate_tournament_data
 
 
 print("-"*4, "MENU", "-"*4)
@@ -12,3 +13,6 @@ if user_input == "1":
 
 elif user_input == "2":
     list_teams()
+    
+elif user_input == "3":
+    generate_tournament_data()

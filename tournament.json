@@ -1,0 +1,28 @@
+{
+    "teams": [
+        {
+            "id": "TM001",
+            "name": "chelsea"
+        },
+        {
+            "id": "TM002",
+            "name": "dortmund"
+        },
+        {
+            "id": "TM003",
+            "name": "urawa reds"
+        },
+        {
+            "id": "TM004",
+            "name": "real madrid"
+        },
+        {
+            "id": "TM005",
+            "name": "como"
+        },
+        {
+            "id": "TM006",
+            "name": "leipzig"
+        }
+    ]
+}
