@@ -1,6 +1,6 @@
 from register_team import register_team
 from list_teams import list_teams
-from assign_matches import generate_tournament_data
+from assign_matches import generate_tournament_fixture
 
 
 print("-"*4, "MENU", "-"*4)
@@ -15,4 +15,4 @@ elif user_input == "2":
     list_teams()
     
 elif user_input == "3":
-    generate_tournament_data()
+    generate_tournament_fixture()

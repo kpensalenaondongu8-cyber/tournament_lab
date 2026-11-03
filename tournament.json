@@ -24,5 +24,142 @@
             "id": "TM006",
             "name": "leipzig"
         }
+    ],
+    "fixtures": [
+        {
+            "id": "M001",
+            "home": "chelsea",
+            "away": "dortmund",
+            "match": "chelsea Vs dortmund",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "chelsea",
+            "away": "urawa reds",
+            "match": "chelsea Vs urawa reds",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "chelsea",
+            "away": "real madrid",
+            "match": "chelsea Vs real madrid",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "chelsea",
+            "away": "como",
+            "match": "chelsea Vs como",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "chelsea",
+            "away": "leipzig",
+            "match": "chelsea Vs leipzig",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "dortmund",
+            "away": "urawa reds",
+            "match": "dortmund Vs urawa reds",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "dortmund",
+            "away": "real madrid",
+            "match": "dortmund Vs real madrid",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "dortmund",
+            "away": "como",
+            "match": "dortmund Vs como",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "dortmund",
+            "away": "leipzig",
+            "match": "dortmund Vs leipzig",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "urawa reds",
+            "away": "real madrid",
+            "match": "urawa reds Vs real madrid",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "urawa reds",
+            "away": "como",
+            "match": "urawa reds Vs como",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "urawa reds",
+            "away": "leipzig",
+            "match": "urawa reds Vs leipzig",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "real madrid",
+            "away": "como",
+            "match": "real madrid Vs como",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "real madrid",
+            "away": "leipzig",
+            "match": "real madrid Vs leipzig",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": "M001",
+            "home": "como",
+            "away": "leipzig",
+            "match": "como Vs leipzig",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        }
     ]
 }

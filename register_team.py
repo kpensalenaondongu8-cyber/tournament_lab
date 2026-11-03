@@ -2,7 +2,8 @@ from validate import validate_team
 import json
 
 def register_team(team_name):
-    with open("tournament.json", "r") as file:
+    file_name = "tournament.json"
+    with open(file_name, "r") as file:
         data = json.load(file)
         
     teams_list = data.get("teams")
@@ -27,7 +28,7 @@ def register_team(team_name):
         
     data["teams"].append(new_team)
     
-    with open("tournament.json", "w") as file:
+    with open(file_name, "w") as file:
         json.dump(data, file, indent=4)
         
     return f"Success: {validated_name} successfully registered for the tournament with ID {team_id}."

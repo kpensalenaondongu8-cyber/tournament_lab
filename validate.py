@@ -14,3 +14,4 @@ def validate_team(name, registered_names):
             return False, f"Error: '{team['name']}' is rejected as a duplicate."
         
     return True, cleaned_name
+
