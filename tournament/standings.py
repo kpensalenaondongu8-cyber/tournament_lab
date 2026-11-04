@@ -1,14 +1,12 @@
 import json
 
 def calculate_standings():
-    try:
-        with open("tournament.json", "r", encoding="utf-8") as file:
+    
+    with open("tournament.json", "r", encoding="utf-8") as file:
             data = json.load(file)
-    except FileNotFoundError:
-        return "Error: 'tournament.json' file not found."
 
-    teams_list = data.get("teams", [])
-    fixtures_list = data.get("fixtures", [])
+    teams_list = data.get("teams")
+    fixtures_list = data.get("fixtures")
 
     standings = {}
     for team in teams_list:
@@ -71,7 +69,6 @@ def calculate_standings():
 
 
 def display_standings():
-    """Formats the ranked table data into a clean text-based leaderboard interface."""
     table = calculate_standings()
     if isinstance(table, str):
         return table
