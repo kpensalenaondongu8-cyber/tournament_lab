@@ -2,10 +2,12 @@ from tournament.register_team import register_team
 from tournament.list_teams import list_teams
 from tournament.assign_matches import generate_tournament_fixture
 from tournament.list_fixtures import list_fixtures
+from tournament.record_result import record_result
+from tournament.status import update_match_status
 
 
 print("-"*4, "MENU", "-"*4)
-print("1.Register team\n2.list teams\n3.generate schedule\n4.list fixtures\n5.record results\n6.standings\n7.show champion\n0.quit")
+print("1.Register team\n2.list teams\n3.generate schedule\n4.list fixtures\n5.record results\n6.update_status\n7.standings\n8.show champion\n0.quit")
 user_input = input("Select from the menu: ")
 if user_input == "1":
     user_input1 = input("Enter team name: ")
@@ -20,3 +22,14 @@ elif user_input == "3":
 
 elif user_input  == "4":
     list_fixtures() 
+
+elif user_input == "5":
+    user_input1 = input("Enter match_id: ")
+    user_input2 = input("Enter home score: ")
+    user_input3 = input("Enter away score: ")
+    record_result(user_input1, user_input2, user_input3)    
+
+elif user_input == "6":
+     user_input1 = input("Enter match_id: ")
+     user_input2 = input("Enter status: ")
+     update_match_status(user_input1, user_input2)

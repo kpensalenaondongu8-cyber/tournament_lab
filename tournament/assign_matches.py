@@ -9,16 +9,17 @@ def generate_tournament_fixture():
 
         if 'fixtures' not in data:
             data['fixtures'] = []
+            
         teams = data.get('teams')
         all_teams = len(teams)
-        next_id = len(data['fixtures'])+1
-        fixture_id = f"M{next_id:03d}"
-
+       
         for i in range(all_teams):
             team1 = teams[i]['name']
 
             for j in range(i + 1, all_teams):
                 team2 = teams[j]['name']
+                next_id = len(data['fixtures'])+1
+                fixture_id = f"M{next_id:03d}"
 
                 fixtures = {
                     "id": fixture_id,
