@@ -4,6 +4,7 @@ from tournament.assign_matches import generate_tournament_fixture
 from tournament.list_fixtures import list_fixtures
 from tournament.record_result import record_result
 from tournament.status import update_match_status
+from tournament.standings import display_standings
 
 
 print("-"*4, "MENU", "-"*4)
@@ -25,11 +26,18 @@ elif user_input  == "4":
 
 elif user_input == "5":
     user_input1 = input("Enter match_id: ")
-    user_input2 = input("Enter home score: ")
-    user_input3 = input("Enter away score: ")
-    record_result(user_input1, user_input2, user_input3)    
+    try:
+       user_input2 = int(input("Enter home score: "))
+       user_input3 = int(input("Enter away score: "))
+       record_result(user_input1, user_input2, user_input3)    
+    except ValueError:
+        print("Score can only be an integer.")   
 
 elif user_input == "6":
      user_input1 = input("Enter match_id: ")
      user_input2 = input("Enter status: ")
      update_match_status(user_input1, user_input2)
+
+elif user_input == "7":
+    print("\n--- LEAGUE STANDINGS ---")
+    print(display_standings())

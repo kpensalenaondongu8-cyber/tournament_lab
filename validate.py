@@ -1,3 +1,6 @@
+MATCH_STATUS = ["pending", "ongoing", "finished"]
+
+
 def validate_team(name, registered_names):
     cleaned_name = name.strip()
 
@@ -15,3 +18,13 @@ def validate_team(name, registered_names):
         
     return True, cleaned_name
 
+
+def validate_status(new_status):
+    cleaned = str(new_status).strip().lower()
+    
+    for result in MATCH_STATUS:
+        if cleaned.lower() not in MATCH_STATUS:
+            return False, "Error: Invalid status"
+        return True, cleaned
+
+            
